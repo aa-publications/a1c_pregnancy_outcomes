@@ -2,7 +2,6 @@
 setwd("/Users/sackd/Library/CloudStorage/Box-Box/a1c_pregnancy_outcomes/vascular paper/")
 
 # call functions and libraries
-# first call some libraries
 source("vasc_func.R")
 
 # set seed for imputations

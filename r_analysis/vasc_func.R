@@ -12,7 +12,7 @@ loadfonts()
 
 # make partial effects plot function
 pp_outcome <- function(model, title, ybounds) {
-  # have to split out t1d and t2d, since t2d estimate is only valid at 6
+  # have to split out t1d and no t1d, since no t1d estimate is only valid at 5.3
   df <- Predict(model, a1c_closest_to_supervision, dm_outcome, fun = plogis) %>%
     as_tibble()
   df_diab <- df %>% filter(dm_outcome == "Type 1 Diabetes")
